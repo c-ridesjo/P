@@ -16,7 +16,7 @@ body {
   background-image: url(/Images/camilla_2022_transparent.png);
   background-size: 30%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom 40% right 20%;
 }
 
 .container {
@@ -31,7 +31,7 @@ nav {
 }
 
 .logo {
-  width: 10rem;
+  width: 14rem;
 }
 
 nav ul li {
@@ -64,7 +64,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  margin-top: 15%;
+  margin-top: 5%;
   font-size: 1.9rem;
 }
 
@@ -156,3 +156,54 @@ nav ul li a:hover::after {
   display: block;
 }
 
+/*---------------services------------*/
+#services {
+  padding: 1.9rem 0;  
+}
+
+.services_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.6rem 1fr));
+  grid-gap: 2.5rem;
+  margin-top: 3.1rem;  
+}
+
+.services_list div{
+  background: #262626;
+  padding: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  border-right: 0.6rem;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services_list div i {
+  font-size: 3.1rem;
+  margin-bottom: 1.9rem;
+}
+
+.services_list div h3 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+}
+
+.services_list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+  margin-top: 1.2rem;
+  display: inline-block;
+}
+
+.services_list div:hover {
+  background-color: #614502;
+  transform: translateY(-0.6rem);
+}
+
+/* -------------------portfolio-------------*/
+
+#portfolio {
+  padding: 3.1rem 0;
+  
+}
