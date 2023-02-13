@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     
-    <link rel="stylesheet" href="/portfolio/assets/index-516b52a5.css">
+    <script src="https://kit.fontawesome.com/30a32a920d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/portfolio/assets/index-ca182f22.css">
   </head>
   <body>
     <div id="header">
@@ -23,7 +24,7 @@
         </nav>
         <div class="header-text">
           <p>Front end developer</p>
-          <h1>Hi, I'm <span>Camilla</span><br />from Västerås</h1>
+          <h1>Hi, I'm <span>Camilla</span></h1>
         </div>
       </div>
     </div>
@@ -90,19 +91,89 @@
         </div>
       </div>
     </div>
+
+    <!---------------services---------->
+    <div id="services">
+      <div class="container">
+        <h2 class="subtitle">My services</h2>
+        <div class="services_list">      
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h3>Web design</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+              Alias exercitationem, placeat ullam error suscipit consequuntur quos. 
+              Laboriosam sequi ipsam debitis sit corrupti perspiciatis est quidem, 
+              amet quia natus consectetur deserunt!</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h3>UI/UX design</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+              Alias exercitationem, placeat ullam error suscipit consequuntur quos. <br>
+              Laboriosam sequi ipsam debitis sit corrupti perspiciatis est quidem, <br>
+              amet quia natus consectetur deserunt!</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h3>App design</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+              Alias exercitationem, placeat ullam error suscipit consequuntur quos. 
+              Laboriosam sequi ipsam debitis sit corrupti perspiciatis est quidem, 
+              amet quia natus consectetur deserunt!</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------portfolio------------->
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="subtitle">My work</h2>
+        <div class="work_list">
+          <div class="work">
+            <img src="/portfolio/assets/to_the_moon-d7c2cfce.png">
+            <div class="layer">
+              <h4>Costumer project</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/portfolio/assets/webshop_donuts-e23625a5.png">
+            <div class="layer">
+              <h4>Web shop</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/portfolio/assets/quiz-384c5930.png">
+            <div class="layer">
+              <h4>CV</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
-      const tablinks = document.getElementsByClassName("tab_links"); //skriptet funkar inte
-      const tabcontents = document.getElementsByClassName("tab_contents");
+      let tablinks = document.getElementsByClassName("tab_links"); //skriptet funkar inte
+      let tabcontents = document.getElementsByClassName("tab_contents");
 
       function opentab(tabname) {
         for (tablink of tablinks) {
-          tablink.classlist.remove("active_link");
+          tablink.classList.remove("active_link");
         }
         for (tabcontent of tabcontents) {
-          tabcontent.classlist.remove("active_tab");
+          tabcontent.classList.remove("active_tab");
         }
-        event.currentTarget.classlist.add("active_link");
-        document.getElementById(tabname).classList.add("active_tab");
+        event.currentTarget.classList.add("active_link");
+        document.getElementById(tabname).classList.add(active_tab);
       }
     </script>
     <!--<script type="module" src="/main.js"></script>-->
