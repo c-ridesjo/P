@@ -16,7 +16,7 @@ body {
     background-image: url(/Images/Foto\ Camilla\ 2022.png);
     background-size: 30%;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
 }
 
 .container {
@@ -31,7 +31,7 @@ nav {
 }
 
 .logo {
-    width: 16rem;
+    width: 10rem;
 }
 
 nav ul li {
@@ -52,7 +52,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #614502;
+    background: #df9d03;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -64,15 +64,87 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 1.9rem;
 }
 
 .header-text h1 {
-    font-size: 3.75rem;
+    font-size: 3rem;
     margin-top: 1.25rem;    
 }
 
 .header-text h1 span {
     color: #614502;
 }
+
+/*--------------about--------------*/
+
+#about {
+    padding: 5rem 0;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about_col_1 {
+    flex-basis: 35%;
+}
+
+.about_col_1 img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.about_col_2 {
+    flex-basis: 60%;
+}
+
+.subtitle {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab_titles {
+    display: flex;
+    margin: 1.2rem 0 2.5rem;
+}
+
+.tab_links {
+    margin-right: 3.1rem;    
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.tab_links::after {
+    content: '';
+    width: 0;
+    height: 0.2rem;
+    background:  #df9d03;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    transition: 0.5s;
+}
+
+.tab_links.active_link::after {
+    width: 50%;
+}
+
+.tab_contents ul li {
+    list-style: none;
+    margin: 0.6rem 0;
+}
+
+.tab_contents ul li span {
+    color: #614502;
+    font-size: 0.9rem;
+}
+
