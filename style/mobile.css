@@ -148,3 +148,11 @@ nav ul li a:hover::after {
     font-size: 0.9rem;
 }
 
+.tab_contents {
+    display: none;
+}
+
+.tab_contents.active_tab {
+    display: block;
+}
+
