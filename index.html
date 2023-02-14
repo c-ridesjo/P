@@ -13,13 +13,15 @@
       <div class="container">
         <nav>
           <img src="images/logo_ridesjo_transparent.png" class="logo" />
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="header-text">          
           <h1>Hi, I'm <span>Camilla</span></h1>
@@ -177,6 +179,9 @@
           </div>
         </div>
       </div>
+      <div class="copyright">
+        <p>Copyright  <i class="fa-sharp fa-regular fa-copyright"></i>  Camilla</p>
+      </div>
     </div>
 
     <script>
@@ -192,6 +197,17 @@
         }
         event.currentTarget.classList.add("active_link");
         document.getElementById(tabname).classList.add("active_tab");
+      }
+    </script>
+
+    <script>
+      let sidemenu = document.getElementById("sidemenu");
+
+      function openMenu(){
+        sidemenu.style.right = '0';
+      }
+      function closeMenu(){
+        sidemenu.style.right = '-12,5rem';
       }
     </script>
   </body>
