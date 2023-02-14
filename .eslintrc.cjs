@@ -13,4 +13,5 @@ module.exports = {
   rules: {
   },
   linebreak: ['error', 'windows'],
+  whitespace: ['error', 'windows']
 };
