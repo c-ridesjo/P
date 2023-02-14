@@ -1,8 +1,8 @@
 /* import { defineConfig } from 'eslint';
 
 export default ({
-    base: '/c-ridesjo.github.io/Portfolio/',
-}); */
+    base: '/portfolio/',
+}); 
 
 import { defineConfig } from 'vite';
 
@@ -12,7 +12,7 @@ då ska "base" här nedan vara "/fed22d-js-grundkurs-jenni-wumpus/"
  */
 
 export default defineConfig({
-  base: '/c-ridesjo.github.io/Portfolio/', // TODO - ändra till ditt repo-namn
+  base: '/portfolio/', // TODO - ändra till ditt repo-namn
   define: {
     'process.env': {},
   },
