@@ -2,7 +2,7 @@
 
 export default ({
     base: '/portfolio/',
-}); 
+});  */
 
 import { defineConfig } from 'vite';
 
