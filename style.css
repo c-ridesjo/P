@@ -331,7 +331,7 @@ nav ul li a:hover::after {
 
 .btn.btn2 {
   display: inline-block;
-  background: #9d6f02;;
+  background: #9d6f02;
 }
 
 .contact_right form {
@@ -356,4 +356,66 @@ form .btn2 {
   font-size: 1.1rem;
   margin-top: 1.2rem;
   cursor: pointer;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 1.6rem;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 1.2rem;
+}
+
+.copyright i {
+  color: #9d6f02;
+}
+
+/*----------------small screens-------------*/
+nav .fas {
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+   #header{
+    background-position: bottom 55% right 50%;   /* fixa fotot/bakgrunden */
+  } 
+
+  .header-text {
+    margin-top: 50%;
+    font-size: 1rem;
+  }
+ 
+  .header-text h1{
+    font-size: 1.9rem;
+  }
+
+  nav .fas {
+    display: block;
+    font-size: 1.6rem;
+  }
+
+  nav ul {
+    background: #9d6f02;
+    position: fixed;
+    top: 0;
+    right: -12.5rem;  /* menyn göms */
+    width: 12.5rem;
+    height: 100vh;
+    padding-top: 3.1rem;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 1.6rem;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+    cursor: pointer;
+  }
 }
