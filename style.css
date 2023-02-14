@@ -291,3 +291,69 @@ nav ul li a:hover::after {
 .btn:hover {
   background: #9d6f02;
 }
+
+/*------------------contact------------*/
+.contact_left {
+  flex-basis: 35%;
+}
+
+.contact_left p {
+  margin-top: 1.9rem;
+}
+
+.contact_left p i {
+  color: #9d6f02;
+  margin-right: 0.9rem;
+  font-size: 1.6rem;
+}
+
+.contact_right {
+  flex-basis: 60%;
+}
+
+.social_icons {
+  margin-top: 1.9rem;
+}
+
+.social_icons a {
+  text-decoration: none;
+  font-size: 1.9rem;
+  margin-right: 0.9rem;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social_icons a:hover {
+  color: #9d6f02;
+  transform: translateY(-5px);
+}
+
+.btn.btn2 {
+  display: inline-block;
+  background: #9d6f02;;
+}
+
+.contact_right form {
+  width: 100%;  
+}
+
+form input, form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 0.9rem;
+  margin: 0.9rem;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 6px;
+}
+
+form .btn2 {
+  margin: 0.9rem;
+  padding: 0.9rem 3.8rem;
+  font-size: 1.1rem;
+  margin-top: 1.2rem;
+  cursor: pointer;
+}
