@@ -1,5 +1,5 @@
-import {defineConfig} from "vite";
+import { defineConfig } from 'eslint';
 
-export default({
-    base: '/portfolio/'
+export default ({
+    base: '/portfolio/',
 });

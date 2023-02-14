@@ -1,97 +1,291 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+  background: #080808;
+  color: #fff;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/Images/camilla_2022_transparent.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: bottom 40% right 20%;
+}
+
+.container {
+  padding: 0 10%;
+}
+
+nav {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+  width: 16rem;
 }
 
-.card {
-  padding: 2em;
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0.6rem 1.2rem;
+
 }
 
-.read-the-docs {
-  color: #888;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #df9d03;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 5%;
+  font-size: 1.9rem;
+}
+
+.header-text h1 {
+  font-size: 3rem;
+  margin-top: 1.25rem;    
+}
+
+.header-text h1 span {
+  color: #614502;
+}
+
+/*--------------about--------------*/
+
+#about {
+  padding: 5rem 0;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about_col_1 {
+  flex-basis: 35%;
+}
+
+.about_col_1 img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.about_col_2 {
+  flex-basis: 60%;
+}
+
+.subtitle {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tab_titles {
+  display: flex;
+  margin: 1.2rem 0 2.5rem;
+}
+
+.tab_links {
+  margin-right: 3.1rem;    
+  font-size: 1.1rem;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  position: relative;
+
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.tab_links::after {
+  content: '';
+  width: 0;
+  height: 0.2rem;
+  background:  #df9d03;
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  transition: 0.5s;
+}
+
+.tab_links.active_link::after {
+  width: 50%;
+}
+
+.tab_contents ul li {
+  list-style: none;
+  margin: 0.6rem 0;
+}
+
+.tab_contents ul li span {
+  color: #614502;
+  font-size: 0.9rem;
+}
+
+.tab_contents {
+  display: none;
+}
+
+.tab_contents.active_tab {
+  display: block;
+}
+
+/*---------------services------------*/
+#services {
+  padding: 1.9rem 0;  
+}
+
+.services_list {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(15.6rem 1fr)); */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.5rem;
+  margin-top: 3.1rem;  
+}
+
+.services_list div{
+  background: #262626;
+  padding: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  border-right: 0.6rem;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services_list div i {
+  font-size: 3.1rem;
+  margin-bottom: 1.9rem;
+}
+
+.services_list div h3 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+}
+
+.services_list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+  margin-top: 1.2rem;
+  display: inline-block;
+}
+
+.services_list div:hover {
+  background-color: #614502;
+  transform: translateY(-0.6rem);
+}
+
+/* -------------------portfolio-------------*/
+
+#portfolio {
+  padding: 3.1rem 0;
+}
+
+.work_list {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(15.6rem 1fr));  */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.5rem;
+  margin-top: 3.1rem; 
+}
+
+.work {
+  border-radius: 0.6rem;  
+  position: relative;
+  overflow: hidden;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 0.6rem;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(#000006, #614502); 
+  border-radius: 0.6rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: height 0.5s; 
+}
+
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.layer a {
+  margin-top: 1.2rem;
+  color: #614502;
+  text-decoration: none;
+  font-size: 1.1rem;
+  line-height: 3.8rem;
+  background: #fff;
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+}
+
+.btn {
+  display: block;
+  margin: 3.1rem auto;
+  width: fit-content;
+  border: 1px solid #614502;
+  padding: 0.8rem 3.1rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: #614502;
 }
