@@ -7,20 +7,22 @@
     <title>Portfolio</title>
     
     <script src="https://kit.fontawesome.com/30a32a920d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/portfolio/assets/index-724db66a.css">
+    <link rel="stylesheet" href="/portfolio/assets/index-6a92acc4.css">
   </head>
   <body>
     <div id="header">
       <div class="container">
         <nav>
           <img src="/portfolio/assets/logo_ridesjo_transparent-8248ac1d.png" class="logo" />
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="header-text">          
           <h1>Hi, I'm <span>Camilla</span></h1>
@@ -178,6 +180,9 @@
           </div>
         </div>
       </div>
+      <div class="copyright">
+        <p>Copyright  <i class="fa-sharp fa-regular fa-copyright"></i>  Camilla</p>
+      </div>
     </div>
 
     <script>
@@ -193,6 +198,17 @@
         }
         event.currentTarget.classList.add("active_link");
         document.getElementById(tabname).classList.add("active_tab");
+      }
+    </script>
+
+    <script>
+      let sidemenu = document.getElementById("sidemenu");
+
+      function openMenu(){
+        sidemenu.style.right = '0';
+      }
+      function closeMenu(){
+        sidemenu.style.right = '-12,5rem';
       }
     </script>
   </body>
