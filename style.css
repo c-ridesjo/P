@@ -16,7 +16,7 @@ body {
   background-image: url(/Images/camilla_2022_transparent.png);
   background-size: 30%;
   background-repeat: no-repeat;
-  background-position: bottom 40% right 20%;
+  background-position: bottom 35% right 20%;
 }
 
 .container {
@@ -44,7 +44,7 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   position: relative;
 }
 
@@ -97,6 +97,7 @@ nav ul li a:hover::after {
 .about_col_1 img {
   width: 100%;
   border-radius: 1rem;
+  border: 5px solid #9d6f02;
 }
 
 .about_col_2 {
@@ -120,7 +121,6 @@ nav ul li a:hover::after {
   font-weight: 500;
   cursor: pointer;
   position: relative;
-
 }
 
 .tab_links::after {
@@ -130,12 +130,12 @@ nav ul li a:hover::after {
   background:  #9d6f02;
   position: absolute;
   left: 0;
-  bottom: -0.5rem;
+  bottom: -6px;
   transition: 0.5s;
 }
 
 .tab_links.active_link::after {
-  width: 50%;
+  width: 100%;
 }
 
 .tab_contents ul li {
@@ -145,7 +145,8 @@ nav ul li a:hover::after {
 
 .tab_contents ul li span {
   color: #9d6f02;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight:600;
 }
 
 .tab_contents {
@@ -172,7 +173,7 @@ nav ul li a:hover::after {
 .services_list div{
   background: #262626;
   padding: 2.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 300;
   border-radius: 0.6rem;
   transition: background 0.5s, transform 0.5s;
@@ -181,6 +182,7 @@ nav ul li a:hover::after {
 .services_list div i {
   font-size: 3.1rem;
   margin-bottom: 1.9rem;
+  color: orange;
 }
 
 .services_list div h3 {
@@ -192,7 +194,7 @@ nav ul li a:hover::after {
 .services_list div a {
   text-decoration: none;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 1.2rem;
   display: inline-block;
 }
@@ -244,7 +246,7 @@ nav ul li a:hover::after {
   flex-direction: column;
   padding: 0 2.5rem;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   transition: height 0.5s; 
 }
 
