@@ -7,7 +7,7 @@
     <title>Portfolio</title>
     
     <script src="https://kit.fontawesome.com/30a32a920d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/portfolio/assets/index-6a92acc4.css">
+    <link rel="stylesheet" href="/portfolio/assets/index-462d13f8.css">
   </head>
   <body>
     <div id="header">
@@ -188,6 +188,7 @@
     <script>
       let tablinks = document.getElementsByClassName("tab_links"); 
       let tabcontents = document.getElementsByClassName("tab_contents");
+      let sidemenu = document.getElementById("sidemenu");
 
       function opentab(tabname) {
         for (tablink of tablinks) {
@@ -199,16 +200,14 @@
         event.currentTarget.classList.add("active_link");
         document.getElementById(tabname).classList.add("active_tab");
       }
-    </script>
 
-    <script>
-      let sidemenu = document.getElementById("sidemenu");
+      
 
       function openMenu(){
-        sidemenu.style.right = '0';
+        sidemenu.style.right = "0";
       }
       function closeMenu(){
-        sidemenu.style.right = '-12,5rem';
+        sidemenu.style.right = "-12,5rem";
       }
     </script>
   </body>
