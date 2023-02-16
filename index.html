@@ -187,6 +187,7 @@
     <script>
       let tablinks = document.getElementsByClassName("tab_links"); 
       let tabcontents = document.getElementsByClassName("tab_contents");
+      let sidemenu = document.getElementById("sidemenu");
 
       function opentab(tabname) {
         for (tablink of tablinks) {
@@ -198,16 +199,14 @@
         event.currentTarget.classList.add("active_link");
         document.getElementById(tabname).classList.add("active_tab");
       }
-    </script>
 
-    <script>
-      let sidemenu = document.getElementById("sidemenu");
+      
 
       function openMenu(){
-        sidemenu.style.right = '0';
+        sidemenu.style.right = "0";
       }
       function closeMenu(){
-        sidemenu.style.right = '-12,5rem';
+        sidemenu.style.right = "-12,5rem";
       }
     </script>
   </body>

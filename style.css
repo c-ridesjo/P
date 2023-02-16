@@ -399,8 +399,8 @@ nav .fas {
     background: #9d6f02;
     position: fixed;
     top: 0;
-    right: -12.5rem;  /* menyn göms */
-    width: 12.5rem;
+    right: -10rem;  /* menyn göms */
+    width: 10rem;
     height: 100vh;
     padding-top: 3.1rem;
     z-index: 2;
